@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         summarizeButton.disabled = false;
-        summarizeButton.textContent = 'Summarize';
-        summarizeButton.classList.remove('summarizing');
+        summarizeButton.textContent = 'Proof Read';
+        summarizeButton.classList.remove('Going Through');
     });
 
     closeButton.addEventListener('click', () => {
