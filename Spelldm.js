@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         summarizeButton.disabled = false;
         summarizeButton.textContent = 'Proof Read';
-        summarizeButton.classList.remove = 'Going Through...';
+        summarizeButton.classList.remove = 'Reading';
     });
 
     closeButton.addEventListener('click', () => {
