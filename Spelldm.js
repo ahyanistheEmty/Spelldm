@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         summarizeButton.disabled = true;
         summarizeButton.textContent = 'Proof Reading...';
-        summarizeButton.classList.add('Proof Read');
+        summarizeButton.classList.add = 'Proof Read';
 
         try {
             const response = await fetch('https://11pwcqff-3002.inc1.devtunnels.ms/summarize', {
