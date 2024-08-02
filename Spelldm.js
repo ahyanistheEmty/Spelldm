@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (text === '') return;
 
         summarizeButton.disabled = true;
-        summarizeButton.textContent = 'Proof Reading...';
-        summarizeButton.classList.add = 'Proof Read';
+        summarizeButton.textContent = 'Editing...';
+        summarizeButton.classList.add('editing');
 
         try {
             const response = await fetch('https://11pwcqff-3002.inc1.devtunnels.ms/summarize', {
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         summarizeButton.disabled = false;
         summarizeButton.textContent = 'Proof Read';
-        summarizeButton.classList.remove = 'Reading';
+        summarizeButton.classList.remove('editing');
     });
 
     closeButton.addEventListener('click', () => {
@@ -161,11 +161,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return formattedText;
     }
 });
-        // JavaScript for Menu Button
-        const menuBtn = document.getElementById('menu-btn');
-        const menuList = document.getElementById('menu-list');
 
-        menuBtn.addEventListener('click', () => {
-            const isOpen = menuList.style.left === '0px';
-            menuList.style.left = isOpen ? '-300px' : '0px';
-        });
+// JavaScript for Menu Button
+const menuBtn = document.getElementById('menu-btn');
+const menuList = document.getElementById('menu-list');
+
+menuBtn.addEventListener('click', () => {
+    const isOpen = menuList.style.left === '0px';
+    menuList.style.left = isOpen ? '-300px' : '0px';
+});
