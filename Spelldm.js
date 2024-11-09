@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         summarizeButton.classList.add('editing');
 
         try {
-            const response = await fetch('https://dbwlqflmg-3002.inc1.devtunnels.ms/summarize', {
+            const response = await fetch('https://9blxjqfd-3002.inc1.devtunnels.ms/summarize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
